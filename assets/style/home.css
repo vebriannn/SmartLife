@@ -381,7 +381,6 @@ body {
     background-color: #1e1e1e;
     padding: 10px;
     left: 19px;
-    top: 49px;
     border-radius: 11px;
   }
 
@@ -396,6 +395,7 @@ body {
 
   .section4 .container .row .col-lg-7 img {
     width: 80%;
+    margin-top: 60px;
   }
 
   .section4 .container .row .col-lg-5 .row .col-lg-6 .card:hover {
