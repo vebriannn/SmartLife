@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="../assets/style/home.css?v=<?php echo time(); ?>" />
    <link rel="stylesheet" href="../components/style/footer.css?v=<?php echo time(); ?>" />
    <link rel="stylesheet" href="../assets/style/swiper-bundle.min.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
    <title>Web Smart Home</title>
  </head>
@@ -88,16 +88,16 @@
              </div>
              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                <div class="content-benefit benefit-1">
-                 <h2>Penggunaan listrik yang lebih hemat</h2>
-                 <p> Anda dapat mengatur kapan perangkat Smart Home dinyalakan dan dimatikan secara smart online. </p>
+                 <h2 class="text-benefit1">Penggunaan listrik yang lebih hemat</h2>
+                 <p class="p-benefit1"> Anda dapat mengatur kapan perangkat Smart Home dinyalakan dan dimatikan secara smart online. </p>
                </div>
                <div class="content-benefit benefit-2">
-                 <h2>Kontrol yang mudah</h2>
-                 <p> Anda dapat mengatur perangkat Smart Home sesuka hati anda mulai dari menyalakan, mematikan, penjadwal, dsb. </p>
+                 <h2 class="text-benefit2">Kontrol yang mudah</h2>
+                 <p class="p-benefit2"> Anda dapat mengatur perangkat Smart Home sesuka hati anda mulai dari menyalakan, mematikan, penjadwal, dsb. </p>
                </div>
                <div class="content-benefit benefit-3">
-                 <h2>Integrasi & automisasi</h2>
-                 <p> Anda dapat mengatur Input yang terjadi secara otomatis berdasarkan waktu, peristiwa, atau kondisi tertentu </p>
+                 <h2 class="text-benefit3">Integrasi & automisasi</h2>
+                 <p class="p-benefit3"> Anda dapat mengatur Input yang terjadi secara otomatis berdasarkan waktu, peristiwa, atau kondisi tertentu </p>
                </div>
              </div>
              <div class="col-lg-5 lampuku" data-aos="fade-left" data-aos-delay="0" data-aos-duration="1000">
@@ -255,7 +255,7 @@
                  <div class="column-kiri d-flex justify-content-center align-items-center" data-aos="fade-zoom-in" data-aos-duration="600">
                    <div class="search ">
                      <div class="input-group">
-                       <input type="search" class="form-control" id="search" placeholder="Masukan Pertanyaanmu" data-aos="fade-up" data-aos-duration="1000">
+                       <input type="search" class="form-control" id="search"  data-aos="fade-up" data-aos-duration="1000">
                        <button class="btn " type="button" id="button-addon2"><span><img src="../assets/images/pesawat-kertas.png" alt="pesawat" class="img-fluid"></span></button>
                      </div>
                    </div>
@@ -314,8 +314,9 @@
 
    </div>
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
    <script src="../assets/script/swiper-bundle.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
    <script src="../assets/script/home.js?v=<?php echo time(); ?>"></script>
    <script type="text/javascript" src="../assets/script/raw.githubusercontent.com_micku7zu_vanilla-tilt.js_master_dist_vanilla-tilt.min.js"></script>
    <script>

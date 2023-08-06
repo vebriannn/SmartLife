@@ -1,7 +1,7 @@
  <nav class="navbar navbar-expand-lg navbar-fixed-top fixed-top py-3" id="navbar">
      <div class="container" id="">
          <a href="." class="navbar-brand" data-aos="fade-down" data-aos-offset="300" data-aos-delay="0" data-aos-easing="ease-in-sine" data-aos-duration="800">Smart Home</a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="navbarMobile">
@@ -12,10 +12,8 @@
                  <li class="nav-item"><a href="../pages/about.php" class="nav-link nav-about" data-aos="fade-down" data-aos-offset="300" data-aos-delay="200" data-aos-easing="ease-in-sine" data-aos-duration="800">Developer</a></li>
              </ul>
              <ul class="navbar-nav gap-3">
-                 <li class="nav-item" id="register"><a href="#" class="btn rounded-pill fw-medium px-4 py-2 signup" id="signup" data-aos="fade-down" data-aos-offset="300" data-aos-delay="250" data-aos-easing="ease-in-sine" data-aos-duration="800">Registred</a></li>
+                 <li class="nav-item" id="register"><a href="#" class="btn rounded-pill fw-medium px-4 py-2 signup shadow-none" id="signup" data-aos="fade-down" data-aos-offset="300" data-aos-delay="250" data-aos-easing="ease-in-sine" data-aos-duration="800">Registred</a></li>
              </ul>
          </div>
      </div>
  </nav>
-
-
