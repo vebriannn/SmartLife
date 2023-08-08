@@ -35,10 +35,10 @@
                    <img class="arrow-img " src="../assets/images/arrow-right.png" alt="" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="700" />
                  </div>
                </div>
-               <div class="icon d-flex mt-4">
-                 <img src="../assets/images/Whatsapp.svg" alt="" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="400" data-aos-duration="800" />
-                 <img src="../assets/images/Instagram.svg" alt="" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-duration="800" />
-                 <img src="../assets/images/Facebook.svg" alt="" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="800" />
+               <div class="icon row d-flex mt-4" id="addrow">
+                 <img src="../assets/images/Whatsapp.svg" alt="" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="400" data-aos-duration="800"  class="col-sm-2" id="addclash" />
+                 <img src="../assets/images/Instagram.svg" alt="" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-duration="800" class="col-sm-2" id="addclash" />
+                 <img src="../assets/images/Facebook.svg" alt="" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="800"  class="col-sm-2" id="addclash" />
                </div>
              </div>
            </div>
@@ -77,10 +77,10 @@
        <div class="content">
          <div class="card">
            <div class="row">
-             <div class="col-lg-12 mb-5" data-aos="fade-right" data-aos-delay="0" data-aos-duration="1000">
+             <div class="col-lg-12 mb-5 pb-0 pb-sm-3" data-aos="fade-right" data-aos-delay="0" data-aos-duration="1000">
                <h1>Keuntungan Menggunakan<br />Smart Home</h1>
              </div>
-             <div class=" col-lg-1 text-center align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+             <div class="col-lg-1 text-center align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                <img src="../assets/images/Vector 4 (1).svg" alt="" />
                <img src="../assets/images/plug-fill.png" alt="" class="img-icon1" />
                <img src="../assets/images/server-fill.png" alt="" class="img-icon2" />
@@ -255,7 +255,7 @@
                  <div class="column-kiri d-flex justify-content-center align-items-center" data-aos="fade-zoom-in" data-aos-duration="600">
                    <div class="search ">
                      <div class="input-group">
-                       <input type="search" class="form-control" id="search"  data-aos="fade-up" data-aos-duration="1000">
+                       <input type="search" class="form-control" id="search" data-aos="fade-up" data-aos-duration="1000">
                        <button class="btn " type="button" id="button-addon2"><span><img src="../assets/images/pesawat-kertas.png" alt="pesawat" class="img-fluid"></span></button>
                      </div>
                    </div>

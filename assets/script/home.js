@@ -57,12 +57,12 @@ function resposiveSmartHome() {
     window.addEventListener("scroll", function () {
       document.getElementById("navbar").classList.remove("sticky");
       document.getElementById("search").placeholder = "Pertanyaanmu";
+
     });
-  }
-  else {
+  } else {
+    // document.querySelectorAll("#addrow").classList.add("row");
     document.getElementById("search").placeholder = "Masukan Pertanyaanmu";
   }
-
 
   if (lebar <= 992) {
     // navbar
@@ -126,10 +126,6 @@ function resposiveSmartHome() {
       document.getElementById("button-addon2").remove();
     }
   }
-
-
-
-
 }
 
 // Add a listener for the 'resize' event
