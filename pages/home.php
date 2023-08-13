@@ -36,9 +36,9 @@
                  </div>
                </div>
                <div class="icon row d-flex mt-4" id="addrow">
-                 <img src="../assets/images/Whatsapp.svg" alt="" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="400" data-aos-duration="800"  class="col-sm-2" id="addclash" />
-                 <img src="../assets/images/Instagram.svg" alt="" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-duration="800" class="col-sm-2" id="addclash" />
-                 <img src="../assets/images/Facebook.svg" alt="" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="800"  class="col-sm-2" id="addclash" />
+                 <img src="../assets/images/Whatsapp.svg" alt="" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="400" data-aos-duration="800"  class="col-sm-2 col-md-2" id="addclash" />
+                 <img src="../assets/images/Instagram.svg" alt="" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-duration="800" class="col-sm-2 col-md-2" id="addclash" />
+                 <img src="../assets/images/Facebook.svg" alt="" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="800"  class="col-sm-2 col-md-2" id="addclash" />
                </div>
              </div>
            </div>

@@ -41,7 +41,8 @@ var swiper = new Swiper(".slide-container", {
       slidesPerView: 1,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
+      spaceBetween: 50,
     },
     1000: {
       slidesPerView: 4,
@@ -57,7 +58,6 @@ function resposiveSmartHome() {
     window.addEventListener("scroll", function () {
       document.getElementById("navbar").classList.remove("sticky");
       document.getElementById("search").placeholder = "Pertanyaanmu";
-
     });
   } else {
     // document.querySelectorAll("#addrow").classList.add("row");
