@@ -53,13 +53,13 @@
                     <p class="subtitle-sosmed text-white m-0 p-0 mt-4"> Kunjung sosial media kami untuk melihat update terbaru. </p>
                     <div class="icon-sosmed m-0 p-0 mt-4">
                       <div class="row">
-                        <div class="col-3">
+                        <div class="col-lg-4 col-3">
                           <img src="../assets/images/Whatsapp.svg" alt="" class="img-fluid" />
                         </div>
-                        <div class="col-3">
+                        <div class="col-lg-4 col-3">
                           <img src="../assets/images/Instagram.svg" alt="" class="img-fluid" />
                         </div>
-                        <div class="col-3">
+                        <div class="col-lg-4 col-3">
                           <img src="../assets/images/Facebook.svg" alt="" class="img-fluid" />
                         </div>
                       </div>

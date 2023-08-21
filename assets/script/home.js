@@ -126,7 +126,9 @@ function resposiveSmartHome() {
       document.getElementById("button-addon2").remove();
     }
   }
+
 }
+
 
 // Add a listener for the 'resize' event
 window.addEventListener("resize", resposiveSmartHome);

@@ -294,19 +294,10 @@ html::-webkit-scrollbar {
     margin: 0px;
   }
 
-  .footer .container .content .list-content .row .sosmed .content-footer .icon-sosmed .row .col-3 {
-    width: max-content;
-    max-width: max-content;
-    flex: 10%;
-    padding: 0px;
-    margin: 0px;
+  .footer .container .content .list-content .row .sosmed .content-footer .icon-sosmed .row .col-lg-4 {
+    width: max-content !important;
   }
 
-  .footer .container .content .list-content .row .sosmed .content-footer .icon-sosmed .row .col-3 img {
-    max-width: 100%;
-    height: auto;
-    width: 64px !important;
-  }
 
   .footer .container .content .list-content .copyright-website .row {
     display: flex;
