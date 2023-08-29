@@ -1,200 +1,286 @@
+ <?php $title = "Product" ?>
  <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../assets/style/products.css"/>
-  <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/style/swiper-bundle.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="../components/style/header.css?v=<?php echo time(); ?>" />
+     <link rel="stylesheet" href="../assets/style/product.css?v=<?php echo time(); ?>" />
+     <link rel="stylesheet" href="../components/style/footer.css?v=<?php echo time(); ?>" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+     <title><?= $title ?> | SmartHome</title>
+ </head>
 
-  <title>Web Smart Home</title>
-</head>
+ <body>
 
-<body style="background-color: #ffffff;">
+     <!-- Header -->
+     <?php include('../components/header.php'); ?>
 
-  <!-- Header -->
-  <?php include('../components/header.php') ?>
+     <!-- content -->
+     <div class="page-content page-product">
+         <section class="section1" id="baris-section1">
+             <div class="container">
+                 <div class="text-section1 ">
+                     <p class="">We make your better home</p>
+                 </div>
+             </div>
+         </section>
 
-  <!-- content -->
-  <div class="page-content page-home">
-    <section class="section1">
-        <div class="row row-top">
-            <div class="col-lg-1 col-left"></div>
-            <div class="col-lg-10 tab-content" id="pills-tabContent">
-                <div class="card d-flex tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="image" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="0" data-aos-duration="800">
-                                <img src="../assets/images/products-airpods.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="text">
-                                <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="0" data-aos-duration="800">Smart Airpods</h1>
-                                <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="50" data-aos-duration="800">From Smartlite</h2>
-                                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="800">Airpods ini terbuat dari bahan aluminium premium yang langsung<br> di import dari Amerika Serikat. Sudah terjual lebih dari 500rb<br>orang di dunia.</p>
-                                <div class="line" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="800"></div>
-                                <div class="info d-flex">
-                                    <div class="icon d-flex">
-                                        <i class="fas fa-star" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="800"></i>
-                                        <i class="fas fa-star" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800"></i>
-                                        <i class="fas fa-star" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800"></i>
-                                        <i class="fas fa-star" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800"></i>
-                                        <i class="far fa-star" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800"></i>
-                                        <p data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">4.6</p>
-                                    </div>
-                                    <div class="sell">
-                                        <p data-aos="zoom-in" data-aos-delay="600" data-aos-duration="800">| 500RB+ terjual</p>
-                                    </div>
-                                </div>
-                                <div class="bottom-button d-flex mt-2">
-                                    <div class="price">
-                                        <h3 data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="150" data-aos-duration="800">Rp. 400.000</h3>
-                                    </div>
-                                    <div class="button d-flex">
-                                        <a href="#" class="btn">Lihat Detail</a>
-                                        <i class="fas fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card d-flex tab-pane fade card-product1" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" style="margin-top: -400px;">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="image">
-                                <img src="../assets/images/products-homepod-white.png" alt="" class="img-whitepod">
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="text">
-                                <h1>White Homepods</h1>
-                                <h2>From Bayashi Shop</h2>
-                                <p>Homepod dengan model premium dan praktis di gunakan<br>dalam kegiatan sehari hari. Dilengkapi dengan<br>fitur automatic off or on.</p>
-                                <div class="line"></div>
-                                <div class="info d-flex">
-                                    <div class="icon d-flex">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>5.0</p>
-                                    </div>
-                                    <div class="sell">
-                                        <p>| 200RB+ terjual</p>
-                                    </div>
-                                </div>
-                                <div class="bottom-button d-flex mt-2">
-                                    <div class="price">
-                                        <h3>Rp. 800.000</h3>
-                                    </div>
-                                    <div class="button d-flex">
-                                        <a href="#" class="btn">Lihat Detail</a>
-                                        <i class="fas fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card d-flex tab-pane fade card-product2" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" style="margin-top: -400px;">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="image">
-                                <img src="../assets/images/products-homepod-black.png" alt="" class="img-blackpod">
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="text">
-                                <h1>Black Homepods</h1>
-                                <h2>From Dutamode</h2>
-                                <p>Airpods ini terbuat dari bahan aluminium premium yang langsung<br> di import dari Amerika Serikat. Sudah terjual lebih dari 500rb<br>orang di dunia.</p>
-                                <div class="line"></div>
-                                <div class="info d-flex">
-                                    <div class="icon d-flex">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <p>3.3</p>
-                                    </div>
-                                    <div class="sell">
-                                        <p>| 10RB+ terjual</p>
-                                    </div>
-                                </div>
-                                <div class="bottom-button d-flex mt-2">
-                                    <div class="price">
-                                        <h3>Rp. 60.000</h3>
-                                    </div>
-                                    <div class="button d-flex">
-                                        <a href="#" class="btn">Lihat Detail</a>
-                                        <i class="fas fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+         <section class="section2" id="baris-section2">
+             <div class="container-fluid">
+                 <div class="row">
+                     <div class="background-kiri col-md-2 d-flex justify-content-center">
+                         <div class="img-lampu">
+                             <img src="../assets/images/image 1_thumbnail 1.png" alt="">
+                         </div>
+                     </div>
 
-                <!-- SELECT -->
-                <div class="card select-product">
-                    <div class="slide-card d-flex nav nav-pills" id="pills-tab" role="tablist">
-                        <a class="wrapper-card-img nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
-                            <img src="../assets/images/products-slide (2).png" alt="" class="mt-2">
-                        </a>
-                        <a class="wrapper-card-img nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
-                            <img src="../assets/images/products-slide (1).png" alt="">
-                        </a>
-                        <a class="wrapper-card-img nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
-                            <img src="../assets/images/products-slide (3).png" alt="" class="mt-3">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-1 col-right">
-                <div class="totals">
-                    <p data-aos="zoom-in" data-aos-delay="0" data-aos-duration="800">01</p>
-                    <div class="line" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800"></div>
-                    <p class="mt-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">03</p>
-                </div>
-                <div class="icon">
-                    <i class="fab fa-twitter" data-aos="fade-right" data-aos-delay="0" data-aos-duration="800"></i>
-                    <i class="fab fa-instagram" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800"></i>
-                    <i class="fab fa-facebook-f" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800"></i>
-                    <i class="fab fa-whatsapp" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800"></i>
-                </div>
-            </div>
-        </div>
-    </section>
+                     <div class="background-tengah col-md-7 ">
+                         <div class="row column-tengah">
+                             <div class="col-md-5 text-left">
+                                 <h1 class="">HomePod Gen 2</h1>
+                                 <p>Buat ruangan menjadi lebih interaktif dengan fitur
+                                     yang lebih banyak seperti pengaturan lewat suara
+                                     dan masih banyak lagi. Promo terbatas!</p>
+                                 <a href="#" class="btn btn-primary px-md-4 pt-md-2 pb-md-2">Beli Sekarang</a>
+                             </div>
+                             <div class="col-md-5 profile-kanan">
+                                 <div class="profile-picture">
+                                     <div class="img d-flex justify-content-center">
+                                         <img src="../assets/images/product-pic-man.png" alt="">
+                                         <img src="../assets/images/img-slide (2).png" alt="">
+                                         <img src="../assets/images/product-pic-man2.png" alt="">
+                                         <img src="../assets/images/img-slide (3).png" alt="">
+                                     </div>
+                                     <div class="tanda-panah">
+                                         <img src="../assets/images/product-tandapanah.png" alt="">
+                                     </div>
+                                     <div class="bintang d-flex justify-content-center mt-md-2">
+                                         <img src="../assets/images/product-bintang.png" alt="">
+                                         <img src="../assets/images/product-bintang.png" alt="">
+                                         <img src="../assets/images/product-bintang.png" alt="">
+                                         <img src="../assets/images/product-bintang.png" alt="">
+                                         <img src="../assets/images/product-bintang.png" alt="">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
 
-    <!-- Footer -->
-    <?php include('../components/footer.php') ?>
-  </div>
-  
-  <script src="../assets/script/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="../assets/script/script.js"></script>
-  <script src="../assets/script/index.js?v=<?php echo time(); ?>"></script>
-  <script type="text/javascript" src="../assets/script/raw.githubusercontent.com_micku7zu_vanilla-tilt.js_master_dist_vanilla-tilt.min.js"></script>
-  <script>
-      VanillaTilt.init(document.querySelectorAll(".card-animate"), {
-      max: 50,
-      speed: 400
-    });
-  </script>
-  <script>    
-    AOS.init();
-  </script> 
-</body>
+                     </div>
+                     <div class="background-kanan col-md-3">
+                         <img src="../assets/images/product-tombol-play.png" alt="">
+                     </div>
+                 </div>
+             </div>
+         </section>
 
-</html>
+         <section class="section3" id="baris-section3">
+             <div class="container-fluid">
+                 <h1 class="text-center">Produk Terpopuler</h1>
+                 <div class="img-tengah">
+                     <img src="../assets/images/image 1_thumbnail 1.png" alt="" srcset="">
+                     <img src="../assets/images/product-items-1.png" alt="" srcset="">
+                     <img src="../assets/images/product-items-2.png" alt="" srcset="">
+                 </div>
+                 <div class="img-blur">
+                     <img src="../assets/images/product-perspective.png" alt="">
+                     <img src="../assets/images/product-bluetooth.png" alt="">
+                 </div>
+             </div>
+         </section>
+
+         <section class="section4" id="baris-section4">
+             <div class="container">
+                 <div class="button-control-items">
+                     <div class="nav-category">
+                         <button class="nav-sec4 nav-active all-filter">All</button>
+                         <button class="nav-sec4 living-filter">Living Series</button>
+                         <button class="nav-sec4 security-filter">Security Series</button>
+                         <button class="nav-sec4 electrical-filter">Electrical Series</button>
+                         <button class="nav-sec4 lighting-filter">Lighting Series</button>
+                     </div>
+                 </div>
+                 <div class="content-button">
+                     <div class="row">
+                         <div class="items col-md-3 living-item">
+                             <div class="card">
+                                 <div class="img-box">
+                                     <img src="../assets/images/image 1_thumbnail 1.png" class="img-fluid" alt="...">
+                                 </div>
+                                 <div class="card-body">
+                                     <h3 class="card-title">HomePod Gen 2</h3>
+                                     <p class="card-text">#Living Series</p>
+                                     <p class="card-harga">Rp. 2.500.000</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="items col-md-3 security-item">
+                             <div class="card">
+                                 <div class="img-box">
+                                     <img src="../assets/images/proitems/Indoor-PTZ-Lite-Version 1.png" class="img-fluid" alt="...">
+                                 </div>
+                                 <div class="card-body">
+                                     <h3 class="card-title">IP Camera (lite)</h3>
+                                     <p class="card-text">#Security Series</p>
+                                     <p class="card-harga">Rp. 560.000</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="items col-md-3 security-item ">
+                             <div class="card">
+                                 <div class="img-box">
+                                     <img src="../assets/images/proitems/Perspective-1-BARDI 1.png" class="img-fluid" alt="...">
+                                 </div>
+                                 <div class="card-body">
+                                     <h3 class="card-title">IP Camera (Pro)</h3>
+                                     <p class="card-text">#Security Series</p>
+                                     <p class="card-harga">Rp. 670.000</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="items col-md-3 electrical-item ">
+                             <div class="card">
+                                 <div class="img-box">
+                                     <img src="../assets/images/proitems/Smart-Plug-BLE-Wi-Fi-Version 1.png" class="img-fluid" alt="...">
+                                 </div>
+                                 <div class="card-body">
+                                     <h3 class="card-title">Portable Plug</h3>
+                                     <p class="card-text">#Electrical Series</p>
+                                     <p class="card-harga">Rp. 75.000</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="items col-md-3 living-item">
+                             <div class="card">
+                                 <div class="img-box">
+                                     <img src="../assets/images/proitems/image 8.png" class="puriffer" alt="...">
+                                 </div>
+                                 <div class="card-body">
+                                     <h3 class="card-title">Air Puriffier</h3>
+                                     <p class="card-text">#Living Series</p>
+                                     <p class="card-harga">Rp. 3.100.000</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="items col-md-3 electrical-item">
+                             <div class="card">
+                                 <div class="img-box">
+                                     <img src="../assets/images/proitems/Bluetooth-Gateway-2 1.png" class="img-fluid" alt="...">
+                                 </div>
+                                 <div class="card-body">
+                                     <h3 class="card-title">Bluetooth Gateway</h3>
+                                     <p class="card-text">#Electrical Series</p>
+                                     <p class="card-harga">Rp. 150.000</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="items col-md-3 living-item">
+                             <div class="card">
+                                 <div class="img-box">
+
+                                     <img src="../assets/images/proitems/Control-Panel-4-inch 1.png" class="img-fluid" alt="...">
+                                 </div>
+                                 <div class="card-body">
+                                     <h3 class="card-title">Smart Panel</h3>
+                                     <p class="card-text">#Living Series</p>
+                                     <p class="card-harga">Rp. 2.450.000</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="items col-md-3 lighting-item">
+                             <div class="card">
+                                 <div class="img-box">
+
+                                     <img src="../assets/images/proitems/image 9.png" class="lampp" alt="...">
+                                 </div>
+                                 <div class="card-body">
+                                     <h3 class="card-title">Smart Lamp</h3>
+                                     <p class="card-text">#Lighting Series</p>
+                                     <p class="card-harga">Rp. 86.000</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section class="section5 brand">
+             <div class="container-fluid">
+                 <div class="row justify-content-center">
+                     <div class="col-lg-1 d-flex justify-content-center">
+                         <img src="../assets/images/sponsor (3).png" alt="">
+                     </div>
+                     <div class="col-lg-3 d-flex justify-content-center">
+                         <img src="../assets/images/sponsor (4).png" alt="">
+                     </div>
+                     <div class="col-lg-2 d-flex justify-content-center">
+                         <img src="../assets/images/sponsor (1).png" alt="">
+                     </div>
+                     <div class="col-lg-3 d-flex justify-content-center">
+                         <img src="../assets/images/sponsor (2).png" alt="">
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section class="section6">
+             <div class="container-fluid p-0">
+                 <div class="content-sec6 overflow-hidden">
+                     <div class="row">
+                         <div class="col-lg-7 p-0">
+                             <div class="row">
+                                 <div class="column-kiri d-flex justify-content-center align-items-center" data-aos="fade-zoom-in" data-aos-duration="600">
+                                     <div class="search ">
+                                         <div class="input-group">
+                                             <input type="search" class="form-control" id="search" data-aos="fade-up" data-aos-duration="1000">
+                                             <!-- <button class="btn " type="button" id="button-addon2"><span><img src="../assets/images/pesawat-kertas.png" alt="pesawat" class="img-fluid"></span></button> -->
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="col-lg-12 border-silver-bawah"></div>
+                             </div>
+                         </div>
+                         <div class="col-lg-5">
+                             <div class="row">
+                                 <div class="col-lg-12 border-silver-atas"></div>
+                                 <div class="col-lg-12 column-kanan d-flex justify-content-center" data-aos="fade-zoom-in" data-aos-duration="600">
+                                     <div class="row ml-5">
+                                         <div class="col-lg-12 mt-5" data-aos="fade-left" data-aos-duration="1000">
+                                             <p class="title">Tulis pertanyaan, costumer <br>
+                                                 service kami siap menjawab <br>
+                                                 keraguan anda <br>
+                                             </p>
+                                         </div>
+                                         <div class="col-lg-12" data-aos="fade-left" data-aos-duration="1000">
+                                             <p class="text-secondary">
+                                                 << Tekan untuk mengirim pesan </p>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="col-lg-12 bg-bawah"></div>
+                             </div>
+                             <div class="pesawat" data-aos="fade-zoom-in" data-aos-duration="1000">
+                                 <img src="../assets/images/pesawat-kertas.png" alt="pesawat" class="img-fluid">
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- Footer -->
+             <?php include('../components/footer.php') ?>
+             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+             <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+             </script>
+             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+             </script>
+             <script src="../components/javascript/header.js"></script>
+             <script src="../assets/script/product.js?v=<?php echo time(); ?>"></script>
+             <script>
+                 AOS.init();
+             </script>
+ </body>
+
+ </html>
