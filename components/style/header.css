@@ -158,6 +158,14 @@ html::-webkit-scrollbar {
     margin-top: 28px;
   }
 
+  .navbar .container .collapse .navbar-nav .nav-active {
+    font-weight: 400;
+    border-bottom: 2px solid var(--color-white);
+    color: var(--color-white);
+    width: max-content;
+    padding: 0px 2px 0px 2px;
+  }
+
   .navbar .container .collapse .navbar-nav .nav-item a {
     color: #000000a3 !important;
   }

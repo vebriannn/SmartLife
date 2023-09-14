@@ -40,6 +40,7 @@ var swiper = new Swiper(".slide-container", {
     },
     1000: {
       slidesPerView: 4,
+      spaceBetween: 10,
     },
   },
 });
@@ -58,9 +59,9 @@ function resposiveSmartHome() {
     document.getElementById("search").placeholder = "Masukan Pertanyaanmu";
   }
 
-  if (lebar <= 992) {
+  if (lebar <= 991) {
     // replace img
-    document.querySelector(".laptop").src = "../assets/images/laptop-lengkap-mobile.png";
+    // document.querySelector(".laptop").src = "../assets/images/laptop-lengkap-mobile.png";
 
     // remove overflow
     document.querySelector(".section3").classList.remove("overflow-hidden");
@@ -117,9 +118,7 @@ function resposiveSmartHome() {
       document.getElementById("button-addon2").remove();
     }
   }
-
 }
-
 
 // Add a listener for the 'resize' event
 window.addEventListener("resize", resposiveSmartHome);

@@ -1,13 +1,31 @@
-//   if (getComputedStyle(a).getPropertyValue("display") != "none") {
-//   }
-
-window.addEventListener("resize", function () {
+function resposiveSmartHome() {
   // check lebar layar
   var lebar = window.innerWidth;
+
+  // ubah placeholder
   if (lebar >= 1200) {
-    document.getElementById("baris-section1");
+    // ubah placeholder
+    document.getElementById("search").placeholder = "Masukan Pertanyaanmu";
+  } else {
+    // ubah placeholder
+    document.getElementById("search").placeholder = "Pertanyaanmu";
   }
-});
+
+  // remove and add icon pesawat
+  if (lebar > 992) {
+    document.getElementById("button-addon2").style.display = "none";
+    document.querySelector(".pesawat").style.display = "block";
+  } else {
+    document.getElementById("button-addon2").style.display = "block";
+    document.querySelector(".pesawat").style.display = "none";
+  }
+}
+
+// Add a listener for the 'resize' event
+window.addEventListener("resize", resposiveSmartHome);
+
+// Call the function initially to apply responsive design based on initial screen width
+resposiveSmartHome();
 
 // check navbar
 var navsection4 = document.querySelectorAll(".nav-sec4");
@@ -16,6 +34,7 @@ navsection4.forEach((links) => {
     navsection4.forEach((link) => {
       link.classList.remove("nav-active");
     });
+
     this.classList.add("nav-active");
 
     if (links.classList.contains("nav-active")) {

@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="../components/style/header.css?v=<?php echo time(); ?>" />
      <link rel="stylesheet" href="../assets/style/product.css?v=<?php echo time(); ?>" />
      <link rel="stylesheet" href="../components/style/footer.css?v=<?php echo time(); ?>" />
+     <link rel="stylesheet" href="../assets/style/scss/main.scss?v=<?php echo time(); ?>" />
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
      <title><?= $title ?> | SmartHome</title>
@@ -37,16 +38,16 @@
                          </div>
                      </div>
 
-                     <div class="background-tengah col-md-7 ">
+                     <div class="background-tengah col-md-12 col-lg-8 col-xl-7">
                          <div class="row column-tengah">
-                             <div class="col-md-5 text-left">
+                             <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 text-left">
                                  <h1 class="">HomePod Gen 2</h1>
                                  <p>Buat ruangan menjadi lebih interaktif dengan fitur
                                      yang lebih banyak seperti pengaturan lewat suara
                                      dan masih banyak lagi. Promo terbatas!</p>
                                  <a href="#" class="btn btn-primary px-md-4 pt-md-2 pb-md-2">Beli Sekarang</a>
                              </div>
-                             <div class="col-md-5 profile-kanan">
+                             <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 profile-kanan">
                                  <div class="profile-picture">
                                      <div class="img d-flex justify-content-center">
                                          <img src="../assets/images/product-pic-man.png" alt="">
@@ -69,7 +70,7 @@
                          </div>
 
                      </div>
-                     <div class="background-kanan col-md-3">
+                     <div class="background-kanan col-lg-2 col-xl-3">
                          <img src="../assets/images/product-tombol-play.png" alt="">
                      </div>
                  </div>
@@ -104,7 +105,7 @@
                  </div>
                  <div class="content-button">
                      <div class="row">
-                         <div class="items col-md-3 living-item">
+                         <div class="items col-sm-4 col-md-3 col-lg-3 col-xl-3 living-item ">
                              <div class="card">
                                  <div class="img-box">
                                      <img src="../assets/images/image 1_thumbnail 1.png" class="img-fluid" alt="...">
@@ -116,7 +117,7 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="items col-md-3 security-item">
+                         <div class="items col-sm-4 col-md-3 col-lg-3 col-xl-3 security-item">
                              <div class="card">
                                  <div class="img-box">
                                      <img src="../assets/images/proitems/Indoor-PTZ-Lite-Version 1.png" class="img-fluid" alt="...">
@@ -128,7 +129,7 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="items col-md-3 security-item ">
+                         <div class="items col-sm-4 col-md-3 col-lg-3 col-xl-3 security-item ">
                              <div class="card">
                                  <div class="img-box">
                                      <img src="../assets/images/proitems/Perspective-1-BARDI 1.png" class="img-fluid" alt="...">
@@ -140,7 +141,7 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="items col-md-3 electrical-item ">
+                         <div class="items col-sm-4 col-md-3 col-lg-3 col-xl-3 electrical-item ">
                              <div class="card">
                                  <div class="img-box">
                                      <img src="../assets/images/proitems/Smart-Plug-BLE-Wi-Fi-Version 1.png" class="img-fluid" alt="...">
@@ -152,7 +153,7 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="items col-md-3 living-item">
+                         <div class="items col-sm-4 col-md-3 col-lg-3 col-xl-3 living-item">
                              <div class="card">
                                  <div class="img-box">
                                      <img src="../assets/images/proitems/image 8.png" class="puriffer" alt="...">
@@ -164,7 +165,7 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="items col-md-3 electrical-item">
+                         <div class="items col-sm-4 col-md-3 col-lg-3 col-xl-3 electrical-item">
                              <div class="card">
                                  <div class="img-box">
                                      <img src="../assets/images/proitems/Bluetooth-Gateway-2 1.png" class="img-fluid" alt="...">
@@ -176,10 +177,9 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="items col-md-3 living-item">
+                         <div class="items col-sm-4 col-md-3 col-lg-3 col-xl-3 living-item">
                              <div class="card">
                                  <div class="img-box">
-
                                      <img src="../assets/images/proitems/Control-Panel-4-inch 1.png" class="img-fluid" alt="...">
                                  </div>
                                  <div class="card-body">
@@ -189,7 +189,7 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="items col-md-3 lighting-item">
+                         <div class="items col-sm-4 col-md-3 col-lg-3 col-xl-3 lighting-item">
                              <div class="card">
                                  <div class="img-box">
 
@@ -210,17 +210,17 @@
          <section class="section5 brand">
              <div class="container-fluid">
                  <div class="row justify-content-center">
-                     <div class="col-lg-1 d-flex justify-content-center">
-                         <img src="../assets/images/sponsor (3).png" alt="">
+                     <div class="col-md-1 col-lg-1 col-xl-1 d-flex justify-content-center">
+                         <img src="../assets/images/sponsor (3).png" alt="" class="img-fluid">
                      </div>
-                     <div class="col-lg-3 d-flex justify-content-center">
-                         <img src="../assets/images/sponsor (4).png" alt="">
+                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex justify-content-center">
+                         <img src="../assets/images/sponsor (4).png" alt="" class="img-fluid">
                      </div>
-                     <div class="col-lg-2 d-flex justify-content-center">
-                         <img src="../assets/images/sponsor (1).png" alt="">
+                     <div class="col-md-3 col-lg-2 col-xl-2 d-flex justify-content-center">
+                         <img src="../assets/images/sponsor (1).png" alt="" class="img-fluid">
                      </div>
-                     <div class="col-lg-3 d-flex justify-content-center">
-                         <img src="../assets/images/sponsor (2).png" alt="">
+                     <div class="col-md-4 col-lg-3 col-xl-3 d-flex justify-content-center">
+                         <img src="../assets/images/sponsor (2).png" alt="" class="img-fluid">
                      </div>
                  </div>
              </div>
@@ -235,8 +235,8 @@
                                  <div class="column-kiri d-flex justify-content-center align-items-center" data-aos="fade-zoom-in" data-aos-duration="600">
                                      <div class="search ">
                                          <div class="input-group">
-                                             <input type="search" class="form-control" id="search" data-aos="fade-up" data-aos-duration="1000">
-                                             <!-- <button class="btn " type="button" id="button-addon2"><span><img src="../assets/images/pesawat-kertas.png" alt="pesawat" class="img-fluid"></span></button> -->
+                                             <input type="search" class="form-control" id="search" data-aos="fade-up" data-aos-duration="1000" placeholder="Masukan Pertanyaanmu">
+                                             <button class="btn " type="button" id="button-addon2"><span><img src="../assets/images/pesawat-kertas.png" alt="pesawat" class="img-fluid"></span></button>
                                          </div>
                                      </div>
                                  </div>
@@ -265,22 +265,21 @@
                              <div class="pesawat" data-aos="fade-zoom-in" data-aos-duration="1000">
                                  <img src="../assets/images/pesawat-kertas.png" alt="pesawat" class="img-fluid">
                              </div>
+
                          </div>
                      </div>
-                 </div>
-             </div>
-             <!-- Footer -->
-             <?php include('../components/footer.php') ?>
-             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-             <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-             </script>
-             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-             </script>
-             <script src="../components/javascript/header.js"></script>
-             <script src="../assets/script/product.js?v=<?php echo time(); ?>"></script>
-             <script>
-                 AOS.init();
-             </script>
+         </section>
+         <!-- Footer -->
+         <?php include('../components/footer.php') ?>
+
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+         <script src="../components/javascript/header.js?=<?php echo time(); ?>"></script>
+         <script src="../assets/script/product.js?v=<?php echo time(); ?>"></script>
+         <script>
+             AOS.init();
+         </script>
  </body>
 
  </html>

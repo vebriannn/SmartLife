@@ -21,7 +21,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-  background-color: #d7e2e4;
+  background-color: #d6e1e2 !important;
 }
 
 :root {
@@ -65,6 +65,142 @@ body {
 
 /* small device mode */
 @media only screen and (max-width: 480px) {
+  /* add modal */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register button i,
+  .modal .modal-dialog .modal-body .row .form-login button i {
+    background-color: white;
+  }
+
+  .modal {
+    background-color: rgba(122, 122, 122, 0.397);
+    backdrop-filter: blur(2px);
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  /* modal login */
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log {
+    margin-top: 1rem;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  /* modal Registered */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    background-color: #d6e1e2;
+    background-image: url(../images/bg-kotak.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have,
+  .modal .modal-dialog .modal-body .row .form-login .container .login {
+    height: max-content;
+    margin-top: 40px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row {
+    gap: 10px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group input,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  .modal .modal-dialog .modal-body .row .bg-exit {
+    display: none;
+  }
   /* section1 */
   .section1 {
     height: 780px;
@@ -132,80 +268,60 @@ body {
 
   /* section2 */
   .section2 {
-    background-color: var(--bg-bluemuda);
     height: max-content;
     padding-bottom: 100px;
-    z-index: 999;
   }
 
-  .section2 .text {
-    position: absolute;
-    margin-left: 200px;
-    z-index: 1;
-  }
-
-  .section2 .text p {
-    font-size: var(--px-16);
-    font-weight: var(--weight-400);
-    color: var(--color-white);
-  }
-
-  .section2 .img-wrapper {
-    height: max-content;
-    width: 100%;
-  }
-
-  .section2 .img-wrapper img {
+  .section2 .container-xl .column-images .row .img-kiri {
     display: none;
+    animation: zoomIn 2s ease forwards, floatImage 3s ease-in-out infinite;
   }
 
-  .section2 .img-wrapper img:nth-child(1) {
-    display: block;
-    width: 80%;
-    margin: 0px auto 0px auto;
-    margin-top: -80px;
+  .section2 .container-xl .column-images .row .img-tengah {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    margin-top: -108px;
+    filter: drop-shadow(-20px 24px 30px #555);
   }
 
-  #row2 {
-    height: max-content;
-    padding-bottom: 40px;
-    overflow: hidden;
+  .section2 .container-xl .column-images .row .img-tengah img{
+    width: 90%;
   }
 
-  .section2 .col-lg-6 h1 {
-    font-size: 28px;
-    color: var(--color-black);
-    font-weight: var(--weight-600);
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  /* .section2 .col-lg-6 h1 br{
+  .section2 .container-xl .column-images .row .img-kanan {
     display: none;
-  } */
+    animation: zoomIn 2s ease forwards, floatImage2 3s ease-in-out infinite;
+  }
 
-  .section2 .col-lg-6 p {
-    color: var(--color-black);
-    font-weight: var(--weight-400);
-    font-size: 16px;
+  .section2 .container-xl .column-text .row .text-kiri h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .section2 .container-xl .column-text .row .text-kanan p {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
     text-align: center;
   }
 
-  .section2 .col-lg-6 .button {
-    text-align: center;
+  .section2 .container-xl .column-text .row .text-kanan {
+    display: grid !important;
+    place-items: center;
   }
 
-  .section2 .col-lg-6 .button a {
-    text-decoration: none;
-    background-color: var(--bg-dark);
-    color: var(--color-white);
-    padding: 12px 25px;
-    font-size: var(--px-14);
-    border-radius: 11px;
+  .section2 .container-xl .column-text .row .text-kanan button {
+    margin-top: 0.3rem;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 10px 26px 10px 26px;
   }
-
   /* section3 */
   .section3 {
+    overflow: hidden;
     height: 640px;
     background-color: var(--bg-dark);
   }
@@ -373,6 +489,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--bg-grey);
   }
 
   .section4 .container .row .col-lg-7 {
@@ -406,11 +523,6 @@ body {
     margin-top: 60px;
   }
 
-  .section4 .container .row .col-lg-5 .row .col-lg-6 .card:hover {
-    transition: 0.3s;
-    background-color: #cfd7d9 !important;
-  }
-
   .section4 .container .row .col-lg-5 .button {
     margin-top: 50px;
   }
@@ -433,7 +545,11 @@ body {
 
   .section5 {
     height: max-content;
-    padding-bottom: 50px;
+    background-color: #2a2a2a;
+    background-image: url(../images/bg-kotak-putih.png);
+    background-repeat: repeat;
+    background-position: center;
+    padding: 20px 0px 80px 0px;
   }
 
   .section5 .container .title h1 {
@@ -547,6 +663,7 @@ body {
     margin: 30px auto 0px auto;
     padding: 8px;
     width: 76%;
+    background-color: whitesmoke;
   }
 
   .section6 .container-fluid .content-sec6 .row .input-group:hover {
@@ -573,6 +690,7 @@ body {
     border: none;
     border-color: 0px;
     box-shadow: none;
+    background: transparent;
   }
 
   .section6 .container-fluid .content-sec6 .row .col-lg-5 .row .column-kanan .row {
@@ -606,7 +724,274 @@ body {
 }
 
 /* Penyesuaian Device Mobile */
-@media only screen and (min-width: 481px) and (max-width: 576px) {
+@media only screen and (min-width: 481px) and (max-width: 575px) {
+  /* add modal */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register button i,
+  .modal .modal-dialog .modal-body .row .form-login button i {
+    background-color: white;
+  }
+
+  .modal {
+    background-color: rgba(122, 122, 122, 0.397);
+    backdrop-filter: blur(2px);
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  /* modal login */
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account {
+    display: none;
+  }
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log {
+    margin-top: 1rem;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  /* modal Registered */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    background-color: #d6e1e2;
+    background-image: url(../images/bg-kotak.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have,
+  .modal .modal-dialog .modal-body .row .form-login .container .login {
+    height: max-content;
+    margin-top: 40px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row {
+    gap: 10px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group input,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  .modal .modal-dialog .modal-body .row .bg-exit {
+    display: none;
+  }
+  /* add modal */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register button i,
+  .modal .modal-dialog .modal-body .row .form-login button i {
+    background-color: white;
+  }
+
+  .modal {
+    background-color: rgba(122, 122, 122, 0.397);
+    backdrop-filter: blur(2px);
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  /* modal login */
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  /* modal Registered */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    background-color: #d6e1e2;
+    background-image: url(../images/bg-kotak.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have,
+  .modal .modal-dialog .modal-body .row .form-login .container .login {
+    height: max-content;
+    margin-top: 40px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row {
+    gap: 10px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group input,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  .modal .modal-dialog .modal-body .row .bg-exit {
+    display: none;
+  }
   /* section1 */
   .section1 {
     height: 780px;
@@ -672,82 +1057,62 @@ body {
     grid-template-columns: 80px 80px 80px;
   }
 
-  /* section2 */
   .section2 {
-    background-color: var(--bg-bluemuda);
     height: max-content;
     padding-bottom: 100px;
-    z-index: 999;
   }
 
-  .section2 .text {
-    position: absolute;
-    margin-left: 200px;
-    z-index: 1;
-  }
-
-  .section2 .text p {
-    font-size: var(--px-16);
-    font-weight: var(--weight-400);
-    color: var(--color-white);
-  }
-
-  .section2 .img-wrapper {
-    height: max-content;
-    width: 100%;
-  }
-
-  .section2 .img-wrapper img {
+  .section2 .container-xl .column-images .row .img-kiri {
     display: none;
+    animation: zoomIn 2s ease forwards, floatImage 3s ease-in-out infinite;
   }
 
-  .section2 .img-wrapper img:nth-child(1) {
-    display: block;
-    width: 80%;
-    margin: 0px auto 0px auto;
-    margin-top: -138px;
+  .section2 .container-xl .column-images .row .img-tengah {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    margin-top: -108px;
+    filter: drop-shadow(-20px 24px 30px #555);
   }
 
-  #row2 {
-    height: max-content;
-    padding-bottom: 40px;
-    overflow: hidden;
+  .section2 .container-xl .column-images .row .img-tengah img{
+    width: 70%;
   }
 
-  .section2 .col-lg-6 h1 {
-    font-size: 34px;
-    color: var(--color-black);
-    font-weight: var(--weight-600);
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  /* .section2 .col-lg-6 h1 br{
+  .section2 .container-xl .column-images .row .img-kanan {
     display: none;
-  } */
+    animation: zoomIn 2s ease forwards, floatImage2 3s ease-in-out infinite;
+  }
 
-  .section2 .col-lg-6 p {
-    color: var(--color-black);
-    font-weight: var(--weight-400);
-    font-size: 24px;
+  .section2 .container-xl .column-text .row .text-kiri h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .section2 .container-xl .column-text .row .text-kanan p {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
     text-align: center;
   }
 
-  .section2 .col-lg-6 .button {
-    text-align: center;
+  .section2 .container-xl .column-text .row .text-kanan {
+    display: grid !important;
+    place-items: center;
   }
 
-  .section2 .col-lg-6 .button a {
-    text-decoration: none;
-    background-color: var(--bg-dark);
-    color: var(--color-white);
-    padding: 12px 25px;
-    font-size: 18px;
-    border-radius: 11px;
+  .section2 .container-xl .column-text .row .text-kanan button {
+    margin-top: 0.3rem;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 10px 26px 10px 26px;
   }
 
   /* section3 */
   .section3 {
+    overflow: hidden;
     height: 640px;
     background-color: var(--bg-dark);
   }
@@ -915,6 +1280,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--bg-grey);
   }
 
   .section4 .container .row .col-lg-7 {
@@ -956,11 +1322,6 @@ body {
     font-size: 40px !important;
   }
 
-  .section4 .container .row .col-lg-5 .row .col-lg-6 .card:hover {
-    transition: 0.3s;
-    background-color: #cfd7d9 !important;
-  }
-
   .section4 .container .row .col-lg-5 .button {
     margin-top: 50px;
   }
@@ -984,7 +1345,11 @@ body {
 
   .section5 {
     height: max-content;
-    padding-bottom: 50px;
+    background-color: #2a2a2a;
+    background-image: url(../images/bg-kotak-putih.png);
+    background-repeat: repeat;
+    background-position: center;
+    padding: 20px 0px 80px 0px;
   }
 
   .section5 .container .title h1 {
@@ -1099,6 +1464,7 @@ body {
     margin: 30px auto 0px auto;
     padding: 8px;
     width: max-content;
+    background-color: whitesmoke;
   }
 
   .section6 .container-fluid .content-sec6 .row .input-group:hover {
@@ -1125,6 +1491,7 @@ body {
     border: none;
     font-size: 20px;
     box-shadow: none;
+    background: transparent;
   }
 
   .section6 .container-fluid .content-sec6 .row .col-lg-5 .row .column-kanan .row {
@@ -1162,7 +1529,142 @@ body {
 }
 
 /* Penyesuaian Device Mobile */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register button i,
+  .modal .modal-dialog .modal-body .row .form-login button i {
+    background-color: white;
+  }
+
+  .modal {
+    background-color: rgba(122, 122, 122, 0.397);
+    backdrop-filter: blur(2px);
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  /* modal login */
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log {
+    margin-top: 1rem;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  /* modal Registered */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    background-color: #d6e1e2;
+    background-image: url(../images/bg-kotak.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have,
+  .modal .modal-dialog .modal-body .row .form-login .container .login {
+    height: max-content;
+    margin-top: 40px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row {
+    gap: 10px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group input,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  .modal .modal-dialog .modal-body .row .bg-exit {
+    display: none;
+  }
+
   /* section1 */
   .section1 {
     height: 780px;
@@ -1227,82 +1729,53 @@ body {
     gap: 0px !important;
   }
 
-  /* section2 */
   .section2 {
-    background-color: var(--bg-bluemuda);
     height: max-content;
     padding-bottom: 100px;
-    z-index: 999;
   }
 
-  .section2 .text {
-    position: absolute;
-    margin-left: 200px;
-    z-index: 1;
-  }
-
-  .section2 .text p {
-    font-size: var(--px-16);
-    font-weight: var(--weight-400);
-    color: var(--color-white);
-  }
-
-  .section2 .img-wrapper {
-    height: max-content;
-    width: 100%;
-  }
-
-  .section2 .img-wrapper img {
+  .section2 .container-xl .column-images .row .img-kiri {
     display: none;
+    animation: zoomIn 2s ease forwards, floatImage 3s ease-in-out infinite;
   }
 
-  .section2 .img-wrapper img:nth-child(1) {
-    display: block;
-    width: 90%;
-    margin: 0px auto 0px auto;
-    margin-top: -160px;
+  .section2 .container-xl .column-images .row .img-tengah {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    margin-top: -108px;
+    filter: drop-shadow(-20px 24px 30px #555);
   }
 
-  #row2 {
-    height: max-content;
-    padding-bottom: 40px;
-    overflow: hidden;
+  .section2 .container-xl .column-images .row .img-tengah img {
+    width: 70%;
   }
 
-  .section2 .col-lg-6 h1 {
-    font-size: 36px;
-    color: var(--color-black);
-    font-weight: var(--weight-600);
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  /* .section2 .col-lg-6 h1 br{
+  .section2 .container-xl .column-images .row .img-kanan {
     display: none;
-  } */
-
-  .section2 .col-lg-6 p {
-    color: var(--color-black);
-    font-weight: var(--weight-400);
-    font-size: 26px;
-    text-align: center;
+    animation: zoomIn 2s ease forwards, floatImage2 3s ease-in-out infinite;
   }
 
-  .section2 .col-lg-6 .button {
-    text-align: center;
+  .section2 .container-xl .column-text .row .text-kiri h1 {
+    font-size: 2rem;
   }
 
-  .section2 .col-lg-6 .button a {
-    text-decoration: none;
-    background-color: var(--bg-dark);
-    color: var(--color-white);
-    padding: 12px 25px;
-    font-size: 20px;
-    border-radius: 11px;
+  .section2 .container-xl .column-text .row .text-kanan p {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .section2 .container-xl .column-text .row .text-kanan button {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 10px 26px 10px 26px;
   }
 
   /* section3 */
   .section3 {
+    overflow: hidden;
     height: 640px;
     background-color: var(--bg-dark);
   }
@@ -1474,6 +1947,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--bg-grey);
   }
 
   .section4 .container .row .col-lg-7 {
@@ -1481,16 +1955,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-  }
-
-  .section4 .container .row .col-lg-7 .card {
-    position: absolute;
-    z-index: 999;
-    background-color: #1e1e1e;
-    padding: 10px;
-    left: 19px;
-    border-radius: 11px;
-    margin-top: -50px;
   }
 
   .section4 .container .row .col-lg-7 .card p {
@@ -1543,7 +2007,11 @@ body {
 
   .section5 {
     height: max-content;
-    padding-bottom: 50px;
+    background-color: #2a2a2a;
+    background-image: url(../images/bg-kotak-putih.png);
+    background-repeat: repeat;
+    background-position: center;
+    padding: 20px 0px 80px 0px;
   }
 
   .section5 .container .title h1 {
@@ -1653,6 +2121,7 @@ body {
     border-radius: 100px;
     overflow: hidden;
     margin: 30px auto 0px auto;
+    background-color: whitesmoke;
     padding: 8px;
     width: 95%;
   }
@@ -1681,6 +2150,7 @@ body {
     border: none;
     font-size: 24px;
     box-shadow: none;
+    background: transparent;
   }
 
   .section6 .container-fluid .content-sec6 .row .col-lg-5 .row .column-kanan .row {
@@ -1727,7 +2197,139 @@ body {
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* add modal */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register button i,
+  .modal .modal-dialog .modal-body .row .form-login button i {
+    background-color: white;
+  }
+
+  .modal {
+    background-color: rgba(122, 122, 122, 0.397);
+    backdrop-filter: blur(2px);
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  /* modal login */
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  /* modal Registered */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    background-color: #d6e1e2;
+    background-image: url(../images/bg-kotak.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have,
+  .modal .modal-dialog .modal-body .row .form-login .container .login {
+    height: max-content;
+    margin-top: 40px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row {
+    gap: 10px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group input,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  .modal .modal-dialog .modal-body .row .bg-exit {
+    display: none;
+  }
   /* section1 */
   .section1 {
     height: 780px;
@@ -1799,80 +2401,52 @@ body {
 
   /* section2 */
   .section2 {
-    background-color: var(--bg-bluemuda);
     height: max-content;
     padding-bottom: 100px;
-    z-index: 999;
   }
 
-  .section2 .text {
-    position: absolute;
-    margin-left: 200px;
-    z-index: 1;
-  }
-
-  .section2 .text p {
-    font-size: var(--px-16);
-    font-weight: var(--weight-400);
-    color: var(--color-white);
-  }
-
-  .section2 .img-wrapper {
-    height: max-content;
-    width: 100%;
-  }
-
-  .section2 .img-wrapper img {
+  .section2 .container-xl .column-images .row .img-kiri {
     display: none;
+    animation: zoomIn 2s ease forwards, floatImage 3s ease-in-out infinite;
   }
 
-  .section2 .img-wrapper img:nth-child(1) {
-    display: block;
-    width: 90%;
-    margin: 0px auto 0px auto;
-    margin-top: -200px;
+  .section2 .container-xl .column-images .row .img-tengah {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    margin-top: -108px;
+    filter: drop-shadow(-20px 24px 30px #555);
   }
 
-  #row2 {
-    height: max-content;
-    padding-bottom: 40px;
-    overflow: hidden;
+  .section2 .container-xl .column-images .row .img-tengah img {
+    width: 70%;
   }
 
-  .section2 .col-lg-6 h1 {
-    font-size: 38px;
-    color: var(--color-black);
-    font-weight: var(--weight-600);
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  /* .section2 .col-lg-6 h1 br{
+  .section2 .container-xl .column-images .row .img-kanan {
     display: none;
-  } */
-
-  .section2 .col-lg-6 p {
-    color: var(--color-black);
-    font-weight: var(--weight-400);
-    font-size: 28px;
-    text-align: center;
+    animation: zoomIn 2s ease forwards, floatImage2 3s ease-in-out infinite;
   }
 
-  .section2 .col-lg-6 .button {
-    text-align: center;
+  .section2 .container-xl .column-text .row .text-kiri h1 {
+    font-size: 2.2rem;
   }
 
-  .section2 .col-lg-6 .button a {
-    text-decoration: none;
-    background-color: var(--bg-dark);
-    color: var(--color-white);
-    padding: 12px 25px;
-    font-size: 22px;
-    border-radius: 11px;
+  .section2 .container-xl .column-text .row .text-kanan p {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .section2 .container-xl .column-text .row .text-kanan button {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 10px 26px 10px 26px;
   }
 
   /* section3 */
   .section3 {
+    overflow: hidden;
     height: 640px;
     background-color: var(--bg-dark);
   }
@@ -2047,6 +2621,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-color: var(--bg-grey);
   }
 
   .section4 .container .row .col-lg-5 .row .col-lg-6 .card .image-wrapper img {
@@ -2101,11 +2676,6 @@ body {
     font-size: 46px !important;
   }
 
-  .section4 .container .row .col-lg-5 .row .col-lg-6 .card:hover {
-    transition: 0.3s;
-    background-color: #cfd7d9 !important;
-  }
-
   .section4 .container .row .col-lg-5 .button {
     margin-top: 50px;
   }
@@ -2129,7 +2699,11 @@ body {
 
   .section5 {
     height: max-content;
-    padding-bottom: 50px;
+    background-color: #2a2a2a;
+    background-image: url(../images/bg-kotak-putih.png);
+    background-repeat: repeat;
+    background-position: center;
+    padding: 20px 0px 80px 0px;
   }
 
   .section5 .container .title h1 {
@@ -2250,6 +2824,7 @@ body {
     margin: 30px auto 0px auto;
     padding: 8px;
     width: 95%;
+    background-color: whitesmoke;
   }
 
   .section6 .container-fluid .content-sec6 .row .input-group:hover {
@@ -2276,6 +2851,7 @@ body {
     border: none;
     font-size: 26px;
     box-shadow: none;
+    background: transparent;
   }
 
   .section6 .container-fluid .content-sec6 .row .col-lg-5 .row .column-kanan .row {
@@ -2322,8 +2898,1008 @@ body {
   }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* add modal */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    display: none;
+  }
 
+  .modal .modal-dialog .modal-body .row .form-register button i,
+  .modal .modal-dialog .modal-body .row .form-login button i {
+    background-color: white;
+  }
+
+  .modal {
+    background-color: rgba(122, 122, 122, 0.397);
+    backdrop-filter: blur(2px);
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  /* modal login */
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  /* modal Registered */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    background-color: #d6e1e2;
+    background-image: url(../images/bg-kotak.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have,
+  .modal .modal-dialog .modal-body .row .form-login .container .login {
+    height: max-content;
+    margin-top: 40px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account {
+    display: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row {
+    gap: 10px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group input,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  .modal .modal-dialog .modal-body .row .bg-exit {
+    display: none;
+  }
+
+  /* section1 */
+  .section1 {
+    height: 950px;
+    width: 100%;
+    background-image: url(../images/bg-home.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 180px;
+  }
+
+  .section1 p {
+    color: var(--color-white);
+    font-size: var(--px-16);
+    font-weight: var(--weight-400);
+  }
+
+  .section1 .container .row .col-lg-6 .content .title-betterhome {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 6px 25px;
+    border-radius: 34px;
+    width: max-content;
+  }
+
+  .section1 .button-arrow {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 34px;
+    width: max-content;
+    padding: 10px 16px;
+  }
+
+  .section1 h2 {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-white);
+  }
+
+  .section1 h1 {
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-white);
+  }
+
+  .section1 .arrow-img {
+    width: 38px;
+    height: 38px;
+    margin-left: 10px;
+  }
+
+  .section1 .icon {
+    gap: 0px;
+  }
+
+  .section1 .container .row .col-lg-6 .content .icon .col-xl-2 {
+    max-width: 80px !important;
+  }
+
+  .section1 .content .button-lamp .button {
+    position: absolute;
+    bottom: 65px;
+    right: 200px;
+    z-index: 999;
+  }
+
+  .section1 .content .button-lamp .button p {
+    color: var(--color-white);
+    line-height: 2px;
+  }
+
+  .section1 .content .button-lamp .button button {
+    background: var(--color-white);
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .section1 .content .button-lamp .button button span {
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: 0.5s, margin-left 0.5s;
+  }
+
+  .activeToggle {
+    background: rgb(53, 199, 109) !important;
+  }
+
+  .activeToggle span {
+    background-color: rgb(255, 255, 255) !important;
+    margin-left: 31px !important;
+  }
+
+  .on {
+    opacity: 1 !important;
+  }
+
+  .section2 {
+    height: max-content;
+    padding-bottom: 100px;
+  }
+
+  .section2 .container-xl .column-images .row .img-kiri {
+    display: none;
+    animation: zoomIn 2s ease forwards, floatImage 3s ease-in-out infinite;
+  }
+
+  .section2 .container-xl .column-images .row .img-tengah {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    margin-top: -108px;
+    filter: drop-shadow(-20px 24px 30px #555);
+  }
+
+  .section2 .container-xl .column-images .row .img-tengah img {
+    width: 70%;
+  }
+
+  .section2 .container-xl .column-images .row .img-kanan {
+    display: none;
+    animation: zoomIn 2s ease forwards, floatImage2 3s ease-in-out infinite;
+  }
+
+  .section2 .container-xl .column-text .row .text-kiri h1 {
+    font-size: 2.2rem;
+  }
+
+  .section2 .container-xl .column-text .row .text-kanan p {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .section2 .container-xl .column-text .row .text-kanan button {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 10px 26px 10px 26px;
+  }
+
+  /* section3 */
+  .section3 {
+    height: 880px;
+    background-color: var(--bg-dark);
+  }
+
+  .section3 .content {
+    padding: 80px 20px;
+  }
+
+  .section3 .card {
+    background: transparent;
+    margin-left: 20px;
+    width: 100%;
+    height: 800px;
+    border-top: 2px solid var(--color-white);
+    border-left: 2px solid var(--color-white);
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    padding: 60px 0px 0px 100px;
+  }
+
+  .section3 .card h1 {
+    font-size: var(--px-36);
+    color: var(--bg-white);
+    font-weight: var(--weight-500);
+  }
+
+  .section3 .card .col-lg-1 {
+    margin-top: 76px;
+  }
+
+  .section3 .card .col-lg-1 img:nth-child(1) {
+    position: absolute;
+    left: 48px;
+    top: 6px;
+  }
+
+  .section3 .card .col-lg-1 .img-icon1 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -74px;
+    left: 14px;
+    background-size: cover;
+  }
+
+  .section3 .card .col-lg-1 .img-icon2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 118px;
+    left: 14px;
+    background-size: cover;
+  }
+
+  .section3 .card .col-lg-1 .img-icon3 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 290px;
+    left: 14px;
+    background-size: cover;
+  }
+
+  .section3 .card .col-lg-6 .content-benefit {
+    margin-left: 20px;
+  }
+
+  .section3 .card .col-lg-6 .benefit-2 {
+    margin-top: 42px;
+  }
+
+  .section3 .card .col-lg-6 .benefit-3 {
+    margin-top: 54px;
+  }
+
+  .section3 .card .col-lg-6 h2 {
+    font-size: var(--px-28);
+    color: var(--color-white);
+    font-weight: var(--weight-500);
+  }
+
+  .section3 .card .col-lg-6 p {
+    font-size: var(--px-18);
+    color: var(--color-white);
+    font-weight: var(--weight-300);
+  }
+
+  .section3 .card .col-lg-5 {
+    justify-content: end;
+    align-items: end;
+    text-align: right;
+  }
+
+  .section3 .card .col-lg-5 img {
+    position: relative;
+  }
+
+  .section3 .card .col-lg-5 .button {
+    position: absolute;
+    bottom: 80px;
+    right: 200px;
+    z-index: 999;
+  }
+
+  .section3 .card .col-lg-5 .button p {
+    color: var(--color-white);
+  }
+
+  .section3 .card .col-lg-5 button {
+    background: var(--color-white);
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .section3 .card .col-lg-5 button span {
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: 0.5s, margin-left 0.5s;
+  }
+
+  .activeToggle {
+    background: rgb(53, 199, 109) !important;
+  }
+
+  .activeToggle span {
+    background-color: rgb(255, 255, 255) !important;
+    margin-left: 31px !important;
+  }
+
+  .on {
+    opacity: 1 !important;
+  }
+
+  .section3 .card .col-lg-5 .img-lamp-1 {
+    /* bottom: 180px;
+  right: 150px; */
+    opacity: 0;
+    width: max-content;
+    transition: opacity 0.5s;
+    position: absolute;
+    bottom: 320px;
+    right: -104px;
+  }
+
+  /* section4 */
+  .section4 {
+    height: max-content;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--bg-bluemuda);
+    overflow: hidden;
+  }
+
+  .section4 .col-lg-7 {
+    z-index: 999;
+  }
+
+  .section4 .black-card {
+    background: var(--bg-dark);
+    color: var(--color-white);
+    width: 40%;
+    height: 16%;
+    border-radius: 11px;
+    padding: 25px 20px;
+    position: relative;
+    left: 320px;
+    top: 60px;
+  }
+
+  .section4 .black-card p {
+    font-weight: var(--weight-400);
+    font-size: var(--px-12);
+    line-height: 1px;
+  }
+
+  .section4 .black-card h2 {
+    --px-28: 24px;
+    font-weight: var(--weight-500);
+    font-size: var(--px-28);
+  }
+
+  .section4 .img-about {
+    width: 450px;
+    height: 650px;
+    position: relative;
+    bottom: 100px;
+    z-index: -1;
+  }
+
+  .section4 .col-text p {
+    font-weight: var(--weight-400);
+    font-size: var(--px-18);
+    color: var(--color-black);
+  }
+
+  .section4 .col-text h1 {
+    font-weight: var(--weight-600);
+    font-size: var(--px-36);
+    color: var(--color-black);
+  }
+
+  .section4 .col-text .card {
+    width: 100%;
+    height: 200px;
+    background-color: var(--bg-grey);
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform-style: preserve-3d;
+  }
+
+  .section4 .col-text .card::before {
+    content: "Smart";
+    position: absolute;
+    color: var(--color-black);
+    font-size: var(--px-46);
+    z-index: -1;
+    font-weight: var(--weight-600);
+    font-style: italic;
+    top: 10px;
+    left: -50px;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.4s;
+  }
+
+  .section4 .col-text .card:hover::before {
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0.3;
+  }
+
+  .section4 .col-text .card::after {
+    content: "HomePod";
+    position: absolute;
+    color: var(--color-black);
+    font-size: var(--px-20);
+    z-index: -1;
+    font-weight: var(--weight-600);
+    font-style: italic;
+    top: 155px;
+    left: 250px;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.4s;
+  }
+
+  .section4 .col-text .card:hover::after {
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0.3;
+  }
+
+  .section4 .col-text .card-2::after {
+    content: "SmartLamp" !important;
+    position: absolute;
+    color: var(--color-black);
+    font-size: var(--px-20);
+    z-index: -1;
+    font-weight: var(--weight-600);
+    font-style: italic;
+    top: 155px;
+    left: 250px;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.4s;
+  }
+
+  .section4 .col-text .card .image-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 50px);
+    transition: 0.3s;
+    max-width: 100%;
+    height: 130px;
+  }
+
+  .section4 .col-text .card .image-wrapper img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 50px);
+    max-width: 120px;
+    transition: 0.3s;
+  }
+
+  .section4 .col-text .card .image-wrapper img:hover {
+    transform: translate3d(-50%, -50%, 50%) rotate(10deg) scale(1.1);
+  }
+
+  .section4 .col-text .button {
+    margin-top: 50px;
+  }
+
+  .section4 .col-text .button a {
+    text-decoration: none;
+    font-size: var(--px-14);
+    color: var(--color-white);
+    background-color: #1e1e1e;
+    padding: 12px 30px;
+    border-radius: 14px;
+  }
+
+  /* section5 */
+  .section5 {
+    height: max-content;
+    background-color: #2a2a2a;
+    background-image: url(../images/bg-kotak-putih.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0px 80px 0px;
+  }
+
+  .section5 .title h1 {
+    font-weight: var(--weight-500);
+    color: var(--color-black);
+    font-size: var(--px-46);
+  }
+
+  .section5 .title .line {
+    width: 45%;
+    height: 1px;
+    margin-top: 30px;
+    background-color: var(--color-white2);
+    margin-left: auto;
+    display: none;
+  }
+
+  .section5 .title a {
+    text-decoration: none;
+    color: var(--color-white2);
+    font-size: var(--px-16);
+    font-weight: var(--weight-400);
+    margin-left: auto;
+    margin-top: 16px;
+  }
+
+  .section5 .slide-container {
+    margin: 0 0px;
+    overflow: hidden;
+  }
+
+  .section5 .card {
+    background-image: url(../images/card-lengkung.png);
+    border-radius: 8px;
+    border: none;
+    background-color: var(--bg-white);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .section5 .card .image-box {
+    height: 200px;
+    padding: 20px 20px;
+  }
+
+  .section5 .card .image-box p {
+    font-size: var(--px-14);
+    font-weight: var(--weight-500);
+  }
+
+  .section5 .card .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .section5 .card .profile-details {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+  }
+
+  .section5 .card .profile-details .img-slide {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .section5 .profile-details .name {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 0px;
+  }
+
+  .section5 .profile-details .name-job {
+    margin-top: 10px;
+  }
+
+  .section5 .profile-details .job {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4d4d4d;
+  }
+
+  .section5 .swiper-navBtn {
+    color: var(--color-black);
+    height: 40px;
+    width: 40px;
+    background: var(--color-white);
+    border-radius: 50%;
+  }
+
+  .section5 .swiper-navBtn::before,
+  .section5 .swiper-navBtn::after {
+    font-size: 18px;
+  }
+
+  .section5 .swiper-pagination-bullet {
+    background-color: var(--color-black);
+  }
+
+  .section6 {
+    height: max-content;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .section6 .container-fluid .content-sec6 {
+    margin-top: -30px;
+  }
+
+  .section6 .container-fluid .title-sec6 {
+    margin-left: 90px;
+  }
+
+  /* Bagian Kiri */
+
+  .section6 .container-fluid .content-sec6 .col-lg-7 .row .column-kiri {
+    width: 100%;
+    height: 320px;
+    background-image: url(../images/img-sofa.png);
+    margin-top: 160px;
+  }
+
+  .section6 .container-fluid .content-sec6 .col-lg-7 .row .border-silver-bawah {
+    width: 100%;
+    height: 160px;
+    border-right: 4px solid silver;
+    border-bottom: 4px solid silver;
+    border-bottom-right-radius: 10px;
+    margin-left: 2px;
+  }
+
+  .section6 .container-fluid .content-sec6 .col-lg-7 .row .column-kiri .search {
+    width: 80%;
+  }
+
+  .section6 .container-fluid .content-sec6 .col-lg-7 .row .column-kiri .search .input-group input {
+    border: none;
+    background-color: #dcdde1;
+    border-radius: 50px;
+  }
+
+  .section6 .container-fluid .content-sec6 .col-lg-7 .row .column-kiri .search .input-group .form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .section6 .container-fluid .content-sec6 .col-lg-7 .row .column-kiri .search .input-group .form-control::placeholder {
+    color: #737373;
+  }
+
+  /* Bagian Kanan */
+
+  .section6 .container-fluid .content-sec6 .col-lg-5 .row .border-silver-atas {
+    width: 100%;
+    height: 160px;
+    border-left: 4px solid silver;
+    border-top: 4px solid silver;
+    border-top-left-radius: 10px;
+    margin-left: 13px;
+    padding: 0px;
+  }
+
+  .section6 .container-fluid .content-sec6 .col-lg-5 .row .column-kanan {
+    max-width: 100%;
+    height: 320px;
+    background-color: #1e1e1e;
+    padding: 0px;
+    margin-left: 15px;
+  }
+
+  .section6 .container-fluid .content-sec6 .col-lg-5 .row .column-kanan .title,
+  .section6 .container-fluid .content-sec6 .col-lg-5 .row .column-kanan .text-secondary {
+    color: var(--bg-white) !important;
+  }
+
+  .section6 .container-fluid .content-sec6 .pesawat {
+    position: absolute;
+    top: 341px;
+    z-index: 999;
+    left: -25px;
+  }
+
+  .section6 .container-fluid .content-sec6 .pesawat img {
+    box-shadow: 0px 0px 30px #d7e2e4;
+    border-radius: 54px;
+  }
+
+  .section7 {
+    height: max-content;
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .modal .modal-dialog .modal-body .row .form-register button i,
+  .modal .modal-dialog .modal-body .row .form-login button i {
+    display: none;
+  }
+
+  /* add modal */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    display: none;
+  }
+
+  .modal {
+    background-color: rgba(122, 122, 122, 0.397);
+    backdrop-filter: blur(2px);
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  /* modal login */
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account p {
+    font-size: 8px;
+    border-radius: 70px;
+    background-color: #2a2a2a;
+    color: white;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account img {
+    position: absolute;
+    margin-left: 22px;
+    margin-top: -15px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account button {
+    font-size: 12px;
+    border-radius: 50px;
+    background-color: #2a2a2a;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-90deg);
+    margin-left: 30px;
+    width: max-content;
+    margin-top: -40px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .login .login-account button:hover {
+    transform: rotate(-86deg);
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-login .container .form-log .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  /* modal Registered */
+  .modal .modal-dialog .modal-body .row .form-register,
+  .modal .modal-dialog .modal-body .row .form-login {
+    background-color: #d6e1e2;
+    background-image: url(../images/bg-kotak.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have,
+  .modal .modal-dialog .modal-body .row .form-login .container .login {
+    height: max-content;
+    margin-top: 40px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account p {
+    font-size: 8px;
+    border-radius: 50px;
+    background-color: #2a2a2a;
+    color: white;
+    transform: rotate(-8deg);
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account img {
+    position: absolute;
+    margin-left: 45px;
+    margin-top: -15px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account .btn:focus,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account button {
+    font-size: 12px;
+    border-radius: 50px;
+    background-color: #2a2a2a;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-90deg);
+    margin-left: 80px;
+    width: max-content;
+    margin-top: -40px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .have .have-account button:hover {
+    transform: rotate(-80deg);
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row {
+    gap: 10px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group {
+    background-color: rgba(138, 142, 143, 22%);
+    border-radius: 60px;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .nameuser .row .col .input-group input,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group .input-group-prepend span,
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .input-group input {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 80px 10px 80px;
+    border-radius: 60px;
+    border: 2px solid #2a2a2a;
+    transition: 0.6s ease-in-out;
+  }
+
+  .modal .modal-dialog .modal-body .row .form-register .container .form-reg .btn-group .btn:hover {
+    background-color: transparent;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+  }
+
+  .modal .modal-dialog .modal-body .row .bg-exit {
+    background-image: url(../images/bg-modal.png);
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-repeat: repeat;
+  }
+
+  .modal .modal-dialog .modal-body .row .bg-exit button i {
+    background-color: white;
+  }
 
   /* section1 */
   .section1 {
@@ -2432,79 +4008,39 @@ body {
     opacity: 1 !important;
   }
 
-  /* section2 */
   .section2 {
-    background-color: var(--bg-bluemuda);
     height: max-content;
     padding-bottom: 100px;
   }
 
-  .section2 .text {
-    position: absolute;
-    margin-left: 200px;
-    z-index: 1;
-  }
-
-  .section2 .text p {
-    font-size: var(--px-16);
-    font-weight: var(--weight-400);
-    color: var(--color-white);
-  }
-
-  .section2 .img-wrapper {
-    height: 450px;
-  }
-
-  .section2 .img-wrapper img {
-    position: relative;
-  }
-
-  .section2 .img-wrapper .laptop {
-    width: 1100px;
-    right: 9%;
-    margin-top: -150px;
-    height: auto;
-  }
-
-  .section2 .img-wrapper .left-img {
-    bottom: 800px;
-    z-index: -1;
-    width: 222px;
-    animation-delay: 0.1s, 0.3s;
-    height: auto;
+  .section2 .container-xl .column-images .row .img-kiri {
     animation: zoomIn 2s ease forwards, floatImage 3s ease-in-out infinite;
   }
 
-  .section2 .img-wrapper .right-img {
-    bottom: 800px;
-    z-index: -1;
-    width: 222px;
-    left: 650px;
-    height: auto;
+  .section2 .container-xl .column-images .row .img-tengah {
+    z-index: 2;
+    margin-top: -108px;
+    filter: drop-shadow(-20px 24px 30px #555);
+  }
+
+  .section2 .container-xl .column-images .row .img-kanan {
     animation: zoomIn 2s ease forwards, floatImage2 3s ease-in-out infinite;
   }
 
-  .section2 .col-lg-6 h1 {
-    font-size: var(--px-46);
-    color: var(--color-black);
-    font-weight: var(--weight-600);
-    text-align: end;
-    line-height: 60px;
+  .section2 .container-xl .column-text .row .text-kiri h1 {
+    font-size: 3.2rem;
   }
 
-  .section2 .col-lg-6 p {
-    color: var(--color-black);
-    font-weight: var(--weight-400);
-    font-size: var(--px-18);
+  .section2 .container-xl .column-text .row .text-kanan p {
+    color: #000000;
+    font-weight: 600;
   }
 
-  .section2 .col-lg-6 a {
-    text-decoration: none;
-    background-color: var(--bg-dark);
-    color: var(--color-white);
-    padding: 12px 25px;
-    font-size: var(--px-14);
-    border-radius: 11px;
+  .section2 .container-xl .column-text .row .text-kanan button {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 10px 26px 10px 26px;
   }
 
   /* section3 */
@@ -2564,11 +4100,11 @@ body {
   }
 
   .section3 .card .col-lg-6 .benefit-3 {
-    margin-top: 84px;
+    margin-top: 80px;
   }
 
   .section3 .card .col-lg-6 h2 {
-    font-size: var(--px-28);
+    font-size: 26px;
     color: var(--color-white);
     font-weight: var(--weight-500);
   }
@@ -2651,6 +4187,7 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--bg-bluemuda);
+    overflow: hidden;
   }
 
   .section4 .col-lg-7 {
@@ -2806,7 +4343,13 @@ body {
 
   /* section5 */
   .section5 {
-    height: 600px;
+    height: max-content;
+    background-color: #2a2a2a;
+    background-image: url(../images/bg-kotak-putih.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0px 80px 0px;
   }
 
   .section5 .title h1 {
@@ -2910,19 +4453,16 @@ body {
 
   .section6 {
     height: max-content;
+    padding-top: 80px;
     padding-bottom: 80px;
   }
+
   .section6 .container-fluid .content-sec6 {
     margin-top: -30px;
   }
 
   .section6 .container-fluid .title-sec6 {
     margin-left: 90px;
-  }
-
-  .section7 {
-    height: max-content;
-    padding-bottom: 80px;
   }
 
   /* Bagian Kiri */
@@ -2997,6 +4537,10 @@ body {
   .section6 .container-fluid .content-sec6 .pesawat img {
     box-shadow: 0px 0px 30px #d7e2e4;
     border-radius: 54px;
+  }
+  .section7 {
+    height: max-content;
+    padding-bottom: 80px;
   }
 }
 
