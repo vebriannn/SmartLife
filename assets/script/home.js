@@ -59,7 +59,7 @@ function resposiveSmartHome() {
     document.getElementById("search").placeholder = "Masukan Pertanyaanmu";
   }
 
-  if (lebar <= 991) {
+  if (lebar <= 992) {
     // replace img
     // document.querySelector(".laptop").src = "../assets/images/laptop-lengkap-mobile.png";
 
@@ -67,9 +67,7 @@ function resposiveSmartHome() {
     document.querySelector(".section3").classList.remove("overflow-hidden");
 
     // remove lampu
-    if (document.querySelector(".lampuku") != undefined) {
-      document.querySelector(".lampuku").remove();
-    }
+    document.querySelector(".lampuku").style.display = "none";
 
     // remove overflow
     document.getElementById("card-animate1").classList.remove("card-animate");
@@ -84,15 +82,14 @@ function resposiveSmartHome() {
     // TextKeuntungan SmartHome remove dan replace to h2
     if (document.querySelector(".p-benefit1") != undefined) {
       document.querySelector(".text-benefit1").innerHTML = "Penggunaan listrik yang lebih hemat<br><span class='spanns' id='spanns'>Anda dapat mengatur kapan perangkat Smart Home dinyalakan dan dimatikan secara smart online. </span> ";
-      document.querySelector(".p-benefit1").remove();
+      document.querySelector(".p-benefit1").style.display = "none";
 
       document.querySelector(".text-benefit2").innerHTML = "Kontrol yang mudah<br><span class='spanns' id='spanns'>Anda dapat mengatur perangkat Smart Home sesuka hati anda mulai dari menyalakan, mematikan, penjadwal, dsb. </span> ";
-      document.querySelector(".p-benefit2").remove();
+      document.querySelector(".p-benefit2").style.display = "none";
 
       document.querySelector(".text-benefit3").innerHTML = "Integrasi & automisasi<br><span class='spanns' id='spanns'>Anda dapat mengatur Input yang terjadi secara otomatis berdasarkan waktu, peristiwa, atau kondisi tertentu </span> ";
-      document.querySelector(".p-benefit3").remove();
+      document.querySelector(".p-benefit3").style.display = "none";
     }
-
     // add and remove span mode mobile
     var i = document.querySelectorAll(".spanns");
     if (lebar <= 360) {
@@ -117,6 +114,17 @@ function resposiveSmartHome() {
     if (document.getElementById("button-addon2") != undefined) {
       document.getElementById("button-addon2").remove();
     }
+
+    document.querySelector(".p-benefit1").style.display = "block";
+    document.querySelector(".p-benefit2").style.display = "block";
+    document.querySelector(".p-benefit3").style.display = "block";
+
+    var i = document.querySelectorAll(".spanns");
+    i.forEach((element) => {
+      element.style.display = "none";
+    });
+
+    document.querySelector(".lampuku").style.display = "block";
   }
 }
 

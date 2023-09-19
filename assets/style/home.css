@@ -285,7 +285,7 @@ body {
     filter: drop-shadow(-20px 24px 30px #555);
   }
 
-  .section2 .container-xl .column-images .row .img-tengah img{
+  .section2 .container-xl .column-images .row .img-tengah img {
     width: 90%;
   }
 
@@ -725,6 +725,7 @@ body {
 
 /* Penyesuaian Device Mobile */
 @media only screen and (min-width: 481px) and (max-width: 575px) {
+  
   /* add modal */
   .modal .modal-dialog .modal-body .row .form-register,
   .modal .modal-dialog .modal-body .row .form-login {
@@ -992,6 +993,7 @@ body {
   .modal .modal-dialog .modal-body .row .bg-exit {
     display: none;
   }
+  
   /* section1 */
   .section1 {
     height: 780px;
@@ -1075,7 +1077,7 @@ body {
     filter: drop-shadow(-20px 24px 30px #555);
   }
 
-  .section2 .container-xl .column-images .row .img-tengah img{
+  .section2 .container-xl .column-images .row .img-tengah img {
     width: 70%;
   }
 
@@ -2330,6 +2332,7 @@ body {
   .modal .modal-dialog .modal-body .row .bg-exit {
     display: none;
   }
+  
   /* section1 */
   .section1 {
     height: 780px;
@@ -4541,6 +4544,24 @@ body {
   .section7 {
     height: max-content;
     padding-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1473px) {
+  .section3 .card .col-lg-1 .img-icon1 {
+    bottom: 174px;
+  }
+
+  .section3 .card .col-lg-1 .img-icon2 {
+    bottom: 190px;
+  }
+
+  .section3 .card .col-lg-1 .img-icon3 {
+    bottom: 87px;
+  }
+  .section3 .card .col-lg-1 img:first-child {
+    position: relative;
+    left: 40px;
   }
 }
 

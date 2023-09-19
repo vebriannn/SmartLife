@@ -1,237 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <title>Web Smart Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../assets/style/control.css"/>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/style/control.css?v=<?php echo time() ?>" />
+  <title>Control | SmartLife</title>
+</head>
 
-  <body>
-    
-    <div class="row first-row">
-        <div class="col-left">
-            <nav class="navbar navbar-expand-lg navbar-light" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="0" data-aos-duration="800">
-              <a href="../pages/home.php">
-                <img src="../assets/images/control-arrow.png" alt="">
-              </a>
-                <img src="../assets/images/control-home-profile.png" alt="">
-                <div class="title-home">
-                    <h6>My Home</h6>
-                    <p>Gandatapa kec. Sumbang, Jawa Tengah</p>
-                </div>
-                <div class="input d-flex">
-                    <input type="text" placeholder="Search Gadget... "> 
-                </div>
-                <img src="../assets/images/control-search.png" alt="" class="control-search">
+<body>
+  <div class="page-content">
+    <section class="section1">
+      <div class="row m-0">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                </div>
-            </nav>
-            <div class="wrapper-title d-flex">
-              <div class="title-room">
-                <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="0" data-aos-duration="800">Home</h1>
-                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="0" data-aos-duration="800">First flor</p>
-              </div>
-              <div class="button" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="0" data-aos-duration="800">
-                <a href="#" class="active">1 Floor</a>
-                <a href="#">2 Floor</a>
-              </div>
-            </div>
-            <div class="img-house">
-              <img src="../assets/images/control-house.png" alt="" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="0" data-aos-duration="800">
-            </div>
-            <div class="icon d-grid">
-              <img src="../assets/images/control-icon (1).png" alt="" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="0" data-aos-duration="800">
-              <img src="../assets/images/control-icon (2).png" alt="" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="800">
-              <img src="../assets/images/control-icon (3).png" alt="" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="800">
-            </div>
-            <div class="homepad mt-4" data-aos="fade-up" data-aos-delay="0" data-aos-duration="800">
-              <h4>Device<br>connected</h4>
-              <div class="wrapper d-flex">
-                <div class="card">
-                  <div class="card second-card">
-                    <img src="../assets/images/control-homepod.png" alt="">
+        <div class="col-sm-6 col-md-8 col-lg-8 col-xl-9 column-left p-0 m-0">
+          <div class="container-xl p-0">
+            <div class="first-rows-content pt-4 pb-4">
+              <div class="row m-0 p-0">
+                <div class="col-md-6 col-lg-6 col-xl-6 left-column-first d-flex">
+                  <div class="first-img d-flex align-items-center">
+                    <a href="home.php">
+                      <img src="../assets/images/arrow-left-control.png" class="img-arrow">
+                    </a>
+                    <img src="../assets/images/control-home-profile.png" alt="">
                   </div>
-                  <p class="mt-1">HomePod <span>- Gen 2</span></p>
-                </div>
-                <div class="button">
-                  <a href="../pages/control-add.php">+ Add new</a>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="col-right">
-          <div class="scroll">
-            <div class="header d-flex">
-              <div class="line" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="0" data-aos-duration="800">
-                <img src="../assets/images/control-line.png" alt="">
-              </div>
-              <div class="notif" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="0" data-aos-duration="800">
-                <img src="../assets/images/control-bell-fill.png" alt="">
-              </div>
-              <div class="profile" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="0" data-aos-duration="800">
-                <img src="../assets/images/control-profile.png" alt="">
-              </div>
-            </div>
-            <div class="content">
-              <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="0" data-aos-duration="800">Welcome 👋,<br>to Control Page</h1>
-              <h4 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="800">members</h4>
-              <div class="img-icon d-flex" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="800">
-                <img src="../assets/images/control-elipse (5).png" alt="">
-                <img src="../assets/images/control-elipse (1).png" alt="">
-                <img src="../assets/images/control-elipse (3).png" alt="">
-                <img src="../assets/images/control-elipse (4).png" alt="">
-                <img src="../assets/images/control-elipse (2).png" alt="">
-              </div>
-              <h5 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="800">Activity</h5>
-              <h2 data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">Juli 10, 2023</h2>
-              <div class="owl-carousel owl-theme" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="800">
-                <div class="owl-item">
-                  <div class="card"></div>
-                  <h3>01</h3>
-                  <p>Sun</p>
-                </div>
-                <div class="owl-item">
-                  <div class="card"></div>
-                  <h3>02</h3>
-                  <p>Mon</p>
-                </div>
-                <div class="owl-item">
-                  <div class="card"></div>
-                  <h3>03</h3>
-                  <p>Tue</p>
-                </div>
-                <div class="owl-item">
-                  <div class="card"></div>
-                  <h3>04</h3>
-                  <p>Wed</p>
-                </div>
-                <div class="owl-item">
-                  <div class="card"></div>
-                  <h3>05</h3>
-                  <p>Thu</p>
-                </div>
-                <div class="owl-item">
-                  <div class="card"></div>
-                  <h3>06</h3>
-                  <p>Fri</p>
-                </div>
-                <div class="owl-item">
-                  <div class="card"></div>
-                  <h3>07</h3>
-                  <p>Sat</p>
-                </div>
-              </div>
-              <div class="time">
-                <div class="time-group d-flex">
-                  <h2>09:00</h2>
-                  <div class="image">
-                    <img src="../assets/images/control-line.png" alt="">
-                  </div>
-                </div>
-                <div class="time-group d-flex">
-                  <h2>10:00</h2>
-                  <div class="image">
-                    <img src="../assets/images/control-line.png" alt="">
-                  </div>
-                  <div class="btn d-flex">
-                    <div class="text">
-                      <div class="txt1">Smart Lamp</div>
-                      <p class="txt2">automatically turns on</p>
-                    </div>
-                    <div class="img-button">
-                      <img src="../assets/images/control-vector.png" alt="">
+                  <div class="first-title-subtitle ml-4 d-flex align-items-center">
+                    <div class="first-text">
+                      <h5 class="font-weight-bolder m-0">My Home </h5>
+                      <p class="m-0 d-sm-none d-md-block">Gandatapa kec. Sumbang, Jawa Tengah</p>
                     </div>
                   </div>
                 </div>
-                <div class="time-group d-flex">
-                  <h2>11:00</h2>
-                  <div class="image">
-                    <img src="../assets/images/control-line.png" alt="">
-                  </div>
-                </div>
-                <div class="time-group d-flex">
-                  <h2>12:00</h2>
-                  <div class="image">
-                    <img src="../assets/images/control-line.png" alt="">
-                  </div>
-                  <div class="btn d-flex">
-                    <div class="text">
-                      <div class="txt1">Humidifier</div>
-                      <p class="txt2">automatically turns off</p>
-                    </div>
-                    <div class="img-button">
-                      <img src="../assets/images/control-vector.png" alt="">
+                <div class="col-md-6 col-lg-6 col-xl-6 right-column-first d-flex justify-content-sm-center justify-content-md-end align-items-center mt-sm-5 mt-md-0">
+                  <div class="input-group w-75">
+                    <input type="text" class="form-control" placeholder="Search Google" id="search">
+                    <div class="input-group-append">
+                      <span class="input-group-text"><i class="bi bi-search"></i></span>
                     </div>
                   </div>
                 </div>
-                <div class="time-group d-flex mb-3">
-                  <h2>13:00</h2>
-                  <div class="image">
-                    <img src="../assets/images/control-line.png" alt="">
+              </div>
+            </div>
+            <div class="last-rows-content mt-4">
+              <div class="texthome">
+                <div class="row m-0">
+                  <div class="col-md-6 text-one">
+                    <h1 class="ml-4">Home</h1>
+                    <h5 class="ml-4">First floor</h5>
+                  </div>
+                  <div class="col-md-6 text-two d-flex justify-content-sm-start ml-sm-3 ml-md-0 justify-content-md-end align-items-center">
+                    <p class="mr-3 m-0 pt-2 pb-2 px-4">1 floor</p>
+                  </div>
+                </div>
+              </div>
+              <div class="icon ml-3 mt-5 pt-2">
+                <div class="col-lg-12 col-xl-12">
+                  <img src="../assets/images/control-icon (3).png" alt="">
+                </div>
+                <div class="col-lg-12 col-xl-12 mt-3">
+                  <img src="../assets/images/control-icon (2).png" alt="">
+                </div>
+                <div class="col-lg-12 col-xl-12 mt-3">
+                  <img src="../assets/images/control-icon (1).png" alt="">
+                </div>
+                <div class="col-lg-12 col-xl-12 mt-3">
+                  <button class="btn shadow-none m-0 p-0" data-target="#addevicemodal" data-toggle="modal"><img src="../assets/images/control-icon (4).png" alt=""></button>
+                </div>
+              </div>
+              <div class="device pl-4 mt-5 pt-3 pb-5">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 devicetext">
+                    <h6 class="font-weight-bolder">Device <br> Connected</h6>
+                    <div class="card-items px-4 mt-4 pb-1 pt-1">
+                      <br>
+                      <div class="item">
+                        <img src="../assets/images/image 1_thumbnail 1.png" alt="">
+                      </div>
+                      <p class="mt-2 text-white">HomePod <span>- Gen 2</span></p>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 btnadd d-flex justify-content-md-center align-items-md-end mt-sm-4 mt-md-0">
+                    <button class="btn shadow-none m-0 pt-2 pb-2 px-4" data-target="#newfloor" data-toggle="modal"><i class="bi bi-plus-lg"></i> Add New</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 column-right p-0 m-0">
+          <div class="profile overflow-hidden">
+            <div class="container-fluid">
+              <div class="row d-flex align-items-center">
+                <div class="black-line">
+                  <img src="../assets/images/garis-patah-control.png" alt="" srcset="">
+                </div>
+                <div class="bell ml-3 mr-3 ">
+                  <i class="bi bi-bell-fill "></i>
+                </div>
+                <div class="picture">
+                  <img src="../assets/images/img-slide (1).png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-xl">
+            <h4 class="text-white mt-4">Welcome 👋,<br>to Control Page</h4>
+            <p class="text-white mt-4">members</p>
+            <div class="images-member ">
+              <img src="../assets/images/img-slide (1).png" alt="" srcset="">
+              <img src="../assets/images/img-slide (2).png" alt="" srcset="">
+              <img src="../assets/images/img-slide (3).png" alt="" srcset="">
+              <img src="../assets/images/product-pic-man.png" alt="" srcset="">
+              <p class="text-white">3+</p>
+            </div>
+            <p class="text-white mb-0 mt-4">Activity</p>
+            <h5 class="text-white foot-weight-bolder">Juli 10, 2023</h5>
+            <div class="datetime mt-4 d-flex justify-content-sm-around">
+              <div class="card">
+                <div class="card-header">
+                </div>
+                <div class="card-text text-center">
+                  <p class="text-black m-0 font-weight-bolder mt-2"> 01 </p>
+                  <p class="text-black m-0"> Sun </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                </div>
+                <div class="card-text text-center">
+                  <p class="text-black m-0 font-weight-bolder mt-2"> 02 </p>
+                  <p class="text-black m-0"> Mon </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                </div>
+                <div class="card-text text-center">
+                  <p class="text-black m-0 font-weight-bolder mt-2"> 03 </p>
+                  <p class="text-black m-0"> Tue </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="time overflow-hidden">
+              <div class="time-group d-flex">
+                <h2>09:00</h2>
+                <div class="image">
+                  <img src="../assets/images/control-line.png" alt="">
+                </div>
+              </div>
+              <div class="time-group d-flex">
+                <h2>10:00</h2>
+                <div class="image">
+                  <img src="../assets/images/control-line.png" alt="">
+                </div>
+                <div class="btn d-flex">
+                  <div class="text">
+                    <div class="txt1">Smart Lamp</div>
+                    <p class="txt2">automatically turns on</p>
+                  </div>
+                  <div class="img-button">
+                    <img src="../assets/images/control-vector.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="time-group d-flex">
+                <h2>11:00</h2>
+                <div class="image">
+                  <img src="../assets/images/control-line.png" alt="">
+                </div>
+              </div>
+              <div class="time-group d-flex">
+                <h2>12:00</h2>
+                <div class="image">
+                  <img src="../assets/images/control-line.png" alt="">
+                </div>
+                <div class="btn d-flex">
+                  <div class="text">
+                    <div class="txt1">Humidifier</div>
+                    <p class="txt2">automatically turns off</p>
+                  </div>
+                  <div class="img-button">
+                    <img src="../assets/images/control-vector.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="time-group d-flex mb-3">
+                <h2>13:00</h2>
+                <div class="image">
+                  <img src="../assets/images/control-line.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="modalfloor">
+    <!-- Modal -->
+    <div class="modal fade" tabindex="-1" id="newfloor">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
+              </div>
+              <input type="text" class="form-control form-lantai" placeholder="Masukan nama lantai">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
+              </div>
+              <input type="text" class="form-control form-katasandi" placeholder="Kata sandi lantai">
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-primary w-100 pt-3 pb-3 mt-3" id="btn-floor" data-dismiss="modal">Add new floor</button>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
+  <section class="modaladdevice">
+    <!-- Modal -->
+    <div class="modal fade" tabindex="-1" id="addevicemodal">
+      <div class="modal-dialog modal-xl ">
+        <div class="modal-content p-0 overflow-hidden">
+          <div class="modal-body p-0">
+            <div class="row">
+              <div class="col-xl-7 modal-column-left d-flex align-items-end overflow-hidden">
+                <div class="container-xl">
+                  <img src="../assets/images/control-card.png" alt="" class="control-card">
+                  <h2 class="text-center mt-4 ">Tambahkan
+                    <u class="font-weight-bolder">Device</u>
+                  </h2>
+                  <div class="card">
+                    <div class="form-card mt-5 pt-4 d-flex justify-content-center ml-lg-5 pl-lg-3 mb-4">
+                      <div class="row">
+                        <div class="col-12 input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Masukan kode device" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="col-12 input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><img src="../assets/images/control-icon-device.png"></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Masukan nama device" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="category ml-lg-5">
+                      <h4>Kategori produk</h4>
+                      <div class="products d-flex justify-content-start">
+                        <p>Living Series</p>
+                        <p>Security Series</p>
+                        <p>Electrical Series</p>
+                        <p>Lighting Series</p>
+                      </div>
+                      <h4 class="mt-3">Tempat</h4>
+                      <div class="place d-flex justify-content-start">
+                        <p>Lantai 1</p>
+                        <p>Lantai 2</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 modal-column-right d-flex justify-content-center align-items-center">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <img src="../assets/images/control-add-device-img.png" class="">
+                  </div>
+                  <div class="col-12">
+                    <h5 class="text-center mt-3">Mencari Perangkat</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-add-modal d-flex justify-content-end">
+              <button class="btn" data-dismiss="modal" id="btn-tambah">Tambahkan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="../assets/script/control.js?<?php echo time(); ?>"></script>
 
+  <script>
+    document.getElementById('btn-tambah').addEventListener('click', () => {
+      window.alert('Berhasil menambahkan Device')
+    })
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="script/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="/script/app.js"></script>
-    <script src="/script/app2.js"></script>
-    <script>    
-      AOS.init();
-    </script>
-    <script>
-      $('.owl-carousel').owlCarousel({
-      loop:true,
-      nav:true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:3
-          },
-          1000:{
-              items:2
-          }
-        }
-      })
-    </script>
-    <script>
-      var btn = document.getElementById("btn");
-      var light = document.getElementById("light");
+    document.getElementById('btn-floor').addEventListener('click', () => {
+      window.alert('Berhasil menambahkan floor')
+    })
+  </script>
+</body>
 
-      function toggleBtn(){
-        btn.classList.toggle("active");
-        light.classList.toggle("on");
-      }
-    </script>
-  </body>
 </html>

@@ -19,6 +19,8 @@ function resposiveSmartHome() {
     document.getElementById("button-addon2").style.display = "block";
     document.querySelector(".pesawat").style.display = "none";
   }
+
+
 }
 
 // Add a listener for the 'resize' event
